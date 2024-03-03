@@ -1,8 +1,10 @@
 from fastapi import FastAPI
 
+import team
+
 app = FastAPI()
 
-# app.include_router(jurisprudencia.router)
+app.include_router(team.router)
 
 @app.get("/", tags=["Health"])
 def root():

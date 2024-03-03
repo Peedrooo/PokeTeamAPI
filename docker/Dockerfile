@@ -15,6 +15,7 @@ COPY requirements/ .
 RUN pip install -r ${ENV_NAME}.txt
 
 COPY ./src/ .
+COPY ./routers/ .
 COPY ./tests/ .
 
 COPY ./start.sh .
