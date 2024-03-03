@@ -15,15 +15,18 @@ The PokeTeamAPI provides endpoints for managing Pokémon teams associated with t
     git clone https://github.com/Peedrooo/TriagilPokeTeamAPI.git
     ```
 
-3. Navigate to the root of the project and run the following command to create network and start the containers.
+3. Rename the `.env.example` file to `.env`
+
+4. Navigate to the root of the project and run the following command to create network and start the containers.
 
     ```bash
     docker-network create triagil-network
     docker-compose up poketeam
     ```
 
-4. The API will be available at `http://localhost:5000`.
-5. The Swagger documentation will be available at `http://localhost:5000/docs`.
+5. The API will be available at `http://localhost:5000`.
+
+6. The Swagger documentation will be available at `http://localhost:5000/docs`.
 
 
 ## How To Test
