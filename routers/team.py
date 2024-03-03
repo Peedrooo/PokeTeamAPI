@@ -30,7 +30,7 @@ class TeamOut(BaseModel):
     pokemons: list
 
 
-@router.post("/teams", tags=["Team"], status_code=status.HTTP_201_CREATED)
+@router.post("/teams", tags=["Teams"], status_code=status.HTTP_201_CREATED)
 def create_team(
     team_data: Team,
     db: Session = Depends(get_db),
@@ -89,7 +89,7 @@ def create_team(
         return {"error": "Error creating team"}
 
 
-@router.get("/teams/{user}", tags=["Team"], status_code=status.HTTP_200_OK)
+@router.get("/teams/{user}", tags=["Teams"], status_code=status.HTTP_200_OK)
 def get_team(
     user: str,
     db: Session = Depends(get_db),
@@ -113,7 +113,7 @@ def get_team(
         return {"error": "Error fetching team"}
 
 
-@router.get("/teams", tags=["Team"], status_code=status.HTTP_200_OK)
+@router.get("/teams", tags=["Teams"], status_code=status.HTTP_200_OK)
 def get_all_teams(db: Session = Depends(get_db)):
     try:
         trainers = db.query(models.Trainer).all()

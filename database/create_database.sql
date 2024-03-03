@@ -1,0 +1,2 @@
+CREATE DATABASE db;
+\c db;
