@@ -13,6 +13,8 @@ services:
       -  './src/:/home/src'
     ports:
       - ${APP_PORT}:${APP_PORT}
+    depends_on:
+      - db
 
   poketeam-test:
     container_name: poketeam-test
