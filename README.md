@@ -170,12 +170,23 @@ The base URL for the Team Service API is `/teams`.
     }
     ```
 
+## Database
+
+### Entity Relationship Diagram
+
+![ERD](img/der.png)
+
+### Data Logic Diagram
+
+![DLD](img/dld.png)
+
 ## Technologies Used
 
 - Python
 - FastAPI
 - Docker
 - Pytest
+- brmodelo
 
 ## Message to Triagil Team
 
