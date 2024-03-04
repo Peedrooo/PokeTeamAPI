@@ -114,7 +114,6 @@ def get_team(
                 "status": "error",
                 "data": None
             }
-
         return TeamOut(owner=trainer.name, pokemons=trainer.pokemons)
 
     except Exception as e:
