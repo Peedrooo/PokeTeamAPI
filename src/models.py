@@ -3,8 +3,6 @@ from sqlalchemy.orm import relationship
 
 from database import Base
 
-
-# Tabela de associação entre Trainer e Pokemon
 has = Table(
     "has",
     Base.metadata,
