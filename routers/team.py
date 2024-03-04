@@ -45,6 +45,15 @@ def create_team(
             db.commit()
             db.refresh(trainer)
         pokemons = []
+
+        if not team_data.team:
+            response.status_code = status.HTTP_400_BAD_REQUEST
+            return {
+                "message": "Error creating team, team is empty",
+                "status": "error",
+                "data": None
+            }
+
         for pokemon_name in team_data.team:
             pokemon = db.query(models.Pokemon).filter_by(
                 name=pokemon_name).first()
