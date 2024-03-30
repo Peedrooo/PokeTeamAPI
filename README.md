@@ -188,9 +188,3 @@ The base URL for the Team Service API is `/teams`.
 - Docker
 - Pytest
 - brmodelo
-
-## Message to Triagil Team
-
-Hope you guys are doing well! I would like to thank you for giving me the opportunity to work on this challenge. I had a great time working on it and I hope to hear from you soon.
-
-Have a great day! 😊
