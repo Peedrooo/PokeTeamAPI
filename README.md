@@ -1,6 +1,7 @@
-# Triagil PokeTeamAPI
+# PokeTeamAPI
 
-This documentation outlines the usage and functionality of the Triagil PokeTeamAPI.
+This documentation outlines the usage and functionality of the PokeTeamAPI.
+Why did I do this? It was just a selection process that required this, and I don't want to delete it
 
 ## Overview
 
